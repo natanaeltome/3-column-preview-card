@@ -10,6 +10,7 @@ h2,
 h3,
 p {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 100vh;
     line-height: 1.6;
     background-color: $color-bg-primary;
 }

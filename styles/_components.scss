@@ -2,10 +2,47 @@
     display: flex;
 }
 
-.card {}
+.card--sedan {
+    @include card();
+    background-color: $color-card-bg-sedan;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
-.card--sedan {}
+.card--suv {
+    @include card();
+    background-color: $color-card-bg-suv;
+}
 
-.card--suv {}
+.card--luxury {
+    @include card();
+    background-color: $color-card-bg-luxury;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
-.card--luxury {}
+.card__icon {
+    align-self: flex-start;
+    padding-bottom: $padding-card-icon-bottom;
+}
+
+.card__title {
+    font-family: $font-family-card-title;
+    font-size: $font-size-card-title;
+    color: $color-card-text;
+    text-transform: uppercase;
+    padding-bottom: $padding-card-title-bottom;
+}
+
+.card__paragraph {
+    font-family: $font-family-card-paragraph;
+    font-size: $font-size-card-paragraph;
+    color: $color-card-text;
+    //padding-bottom: $padding-card-paragraph-bottom;
+}
+
+.card__button {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0
+}

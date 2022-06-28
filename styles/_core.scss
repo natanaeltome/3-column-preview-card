@@ -6,10 +6,25 @@
     $color-card-text: hsl(0, 0%, 95%);
     $color-card-bg-button: hsl(0, 0%, 95%);
 
+    $font-size-card-title: 2.5rem;
     $font-size-card-paragraph: 15px;
     $font-family-card-title: 'Big Shoulders Display',
     cursive;
     $font-family-card-paragraph: 'Lexend Deca',
     sans-serif;
 
+    $padding-card-icon-bottom: 1rem;
+    $padding-card-title-bottom: 1rem;
+    $padding-card-paragraph-bottom: 6rem;
+
+
     // Mixins
+
+    @mixin card {
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-evenly;
+        //row-gap: 2rem;
+        width: 320px;
+        padding: 3rem;
+    }
