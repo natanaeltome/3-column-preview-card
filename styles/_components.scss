@@ -23,26 +23,50 @@
 
 .card__icon {
     align-self: flex-start;
-    padding-bottom: $padding-card-icon-bottom;
 }
 
 .card__title {
     font-family: $font-family-card-title;
     font-size: $font-size-card-title;
-    color: $color-card-text;
+    color: $color-card-title;
     text-transform: uppercase;
-    padding-bottom: $padding-card-title-bottom;
 }
 
 .card__paragraph {
     font-family: $font-family-card-paragraph;
     font-size: $font-size-card-paragraph;
-    color: $color-card-text;
-    //padding-bottom: $padding-card-paragraph-bottom;
+    color: $color-card-paragraph;
 }
 
 .card__button {
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 0
+    align-self: flex-start;
+    margin-top: $padding-card-button-top;
+    width: 75%;
+    height: 3rem;
+    font-size: $font-size-card-button;
+    background-color: $color-card-bg-button;
+    cursor: pointer;
+    border-color: $color-card-bg-button;
+    border-style: solid;
+    border-radius: 2.5rem;
+}
+
+.card__button--sedan {
+    @extend .card__button;
+    color: $color-card-bg-sedan;
+}
+
+.card__button--suv {
+    @extend .card__button;
+    color: $color-card-bg-suv;
+}
+
+.card__button--luxury {
+    @extend .card__button;
+    color: $color-card-bg-luxury;
+}
+
+.card__button:hover {
+    background-color: transparent;
+    color: $color-card-bg-button;
 }

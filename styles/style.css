@@ -29,7 +29,9 @@ body {
 .card--sedan {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  justify-content: space-between;
+  row-gap: 1rem;
+  width: 300px;
   padding: 3rem;
   background-color: hsl(31deg, 77%, 52%);
   border-top-left-radius: 10px;
@@ -39,7 +41,9 @@ body {
 .card--suv {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  justify-content: space-between;
+  row-gap: 1rem;
+  width: 300px;
   padding: 3rem;
   background-color: hsl(184deg, 100%, 22%);
 }
@@ -47,7 +51,9 @@ body {
 .card--luxury {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  justify-content: space-between;
+  row-gap: 1rem;
+  width: 300px;
   padding: 3rem;
   background-color: hsl(179deg, 100%, 13%);
   border-top-right-radius: 10px;
@@ -56,7 +62,6 @@ body {
 
 .card__icon {
   align-self: flex-start;
-  padding-bottom: 1rem;
 }
 
 .card__title {
@@ -64,17 +69,40 @@ body {
   font-size: 2.5rem;
   color: hsl(0deg, 0%, 95%);
   text-transform: uppercase;
-  padding-bottom: 1rem;
 }
 
 .card__paragraph {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
-  color: hsl(0deg, 0%, 95%);
+  color: hsla(0deg, 0%, 100%, 0.75);
 }
 
-.card__button {
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 0;
+.card__button, .card__button--luxury, .card__button--suv, .card__button--sedan {
+  align-self: flex-start;
+  margin-top: 6rem;
+  width: 75%;
+  height: 3rem;
+  font-size: 15px;
+  background-color: hsl(0deg, 0%, 95%);
+  cursor: pointer;
+  border-color: hsl(0deg, 0%, 95%);
+  border-style: solid;
+  border-radius: 2.5rem;
+}
+
+.card__button--sedan {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.card__button--suv {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.card__button--luxury {
+  color: hsl(179deg, 100%, 13%);
+}
+
+.card__button:hover, .card__button--sedan:hover, .card__button--suv:hover, .card__button--luxury:hover {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
 }/*# sourceMappingURL=style.css.map */

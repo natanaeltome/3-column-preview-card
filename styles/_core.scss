@@ -3,19 +3,19 @@
     $color-card-bg-sedan: hsl(31, 77%, 52%);
     $color-card-bg-suv: hsl(184, 100%, 22%);
     $color-card-bg-luxury: hsl(179, 100%, 13%);
-    $color-card-text: hsl(0, 0%, 95%);
+    $color-card-paragraph: hsla(0, 0%, 100%, 0.75);
+    $color-card-title: hsl(0, 0%, 95%);
     $color-card-bg-button: hsl(0, 0%, 95%);
 
     $font-size-card-title: 2.5rem;
     $font-size-card-paragraph: 15px;
+    $font-size-card-button: 15px;
     $font-family-card-title: 'Big Shoulders Display',
     cursive;
     $font-family-card-paragraph: 'Lexend Deca',
     sans-serif;
 
-    $padding-card-icon-bottom: 1rem;
-    $padding-card-title-bottom: 1rem;
-    $padding-card-paragraph-bottom: 6rem;
+    $padding-card-button-top: 6rem;
 
 
     // Mixins
@@ -23,8 +23,8 @@
     @mixin card {
         display: flex;
         flex-direction: column;
-        //justify-content: space-evenly;
-        //row-gap: 2rem;
-        width: 320px;
+        justify-content: space-between;
+        row-gap: 1rem;
+        width: 300px;
         padding: 3rem;
     }
