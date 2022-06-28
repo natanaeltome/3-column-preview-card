@@ -25,6 +25,11 @@ body {
 .container {
   display: flex;
 }
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+}
 
 .card--sedan {
   display: flex;
@@ -36,6 +41,12 @@ body {
   background-color: hsl(31deg, 77%, 52%);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+@media (max-width: 992px) {
+  .card--sedan {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
 }
 
 .card--suv {
@@ -58,6 +69,12 @@ body {
   background-color: hsl(179deg, 100%, 13%);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+@media (max-width: 992px) {
+  .card--luxury {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .card__icon {
@@ -88,6 +105,11 @@ body {
   border-color: hsl(0deg, 0%, 95%);
   border-style: solid;
   border-radius: 2.5rem;
+}
+@media (max-width: 992px) {
+  .card__button, .card__button--luxury, .card__button--suv, .card__button--sedan {
+    margin-top: 1rem;
+  }
 }
 
 .card__button--sedan {
