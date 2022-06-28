@@ -96,9 +96,9 @@ body {
 
 .card__button, .card__button--luxury, .card__button--suv, .card__button--sedan {
   align-self: flex-start;
+  display: inline-block;
   margin-top: 6rem;
-  width: 75%;
-  height: 3rem;
+  padding: 1rem 2rem;
   font-size: 15px;
   background-color: hsl(0deg, 0%, 95%);
   cursor: pointer;
