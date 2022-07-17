@@ -1,5 +1,7 @@
 .container {
     display: flex;
+    border-radius: 10px;
+    overflow: hidden;
 
     @include breakpoint(lg) {
         flex-direction: column;
@@ -9,13 +11,6 @@
 .card--sedan {
     @include card();
     background-color: $color-card-bg-sedan;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-
-    @include breakpoint(lg) {
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 10px;
-    }
 }
 
 .card--suv {
@@ -26,13 +21,6 @@
 .card--luxury {
     @include card();
     background-color: $color-card-bg-luxury;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    @include breakpoint(lg) {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
-    }
 }
 
 .card__icon {

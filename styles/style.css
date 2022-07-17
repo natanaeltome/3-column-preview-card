@@ -24,6 +24,8 @@ body {
 
 .container {
   display: flex;
+  border-radius: 10px;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .container {
@@ -39,14 +41,6 @@ body {
   width: 300px;
   padding: 3rem;
   background-color: hsl(31deg, 77%, 52%);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-@media (max-width: 992px) {
-  .card--sedan {
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 10px;
-  }
 }
 
 .card--suv {
@@ -67,14 +61,6 @@ body {
   width: 300px;
   padding: 3rem;
   background-color: hsl(179deg, 100%, 13%);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-@media (max-width: 992px) {
-  .card--luxury {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
-  }
 }
 
 .card__icon {

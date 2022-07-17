@@ -1,0 +1,5 @@
+- Change button tag to <a> tag
+- for image tag, since they are decorative, make alt attribute empty, and add <aria-hidden="true"> attribute
+- border-radius and overflow hidden to the main container that wraps the three cards so you don't have to set it to individual corners.
+
+"Change button tag to <a> tag, make alt attribute empty for images and add <aria-hidden="true"> to them, add border-radius and overflow:hidden to the main container that wraps the three cards to avoid having to change the border radius multiple times"
